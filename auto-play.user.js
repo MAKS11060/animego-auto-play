@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         Animego play next
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  automatic open next video
-// @author       You
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=animego.org
 // @match        https://animego.org/anime/*
 // @match        https://aniboom.one/*
 // @match        https://kodik.info/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=animego.org
 // @grant        none
 // @updateURL    https://github.com/MAKS11060/animego-auto-play/raw/main/auto-play.user.js
 // @downloadURL  https://github.com/MAKS11060/animego-auto-play/raw/main/auto-play.user.js
