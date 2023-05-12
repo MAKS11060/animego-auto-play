@@ -15,7 +15,7 @@
 
 // ==/UserScript==
 
-(function() {
+(function () {
   'use strict'
 
   // use custom events handler
@@ -46,7 +46,7 @@
 
     if (['aniboom.one'].includes(window.location.hostname)) {
       let i = setInterval(() => {
-        console.log('try play()', window.location.hostname)
+        // console.log('try play()', window.location.hostname)
         const btnEl = window.document.querySelector('button[type=button]')
         btnEl?.click()
 
@@ -131,4 +131,4 @@
       }
     }
   }
-})();
+})()
