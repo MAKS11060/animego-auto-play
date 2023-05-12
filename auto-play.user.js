@@ -9,6 +9,8 @@
 // @match        https://kodik.info/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=animego.org
 // @grant        none
+// @updateURL    https://github.com/MAKS11060/animego-auto-play/raw/main/auto-play.user.js
+// @downloadURL  https://github.com/MAKS11060/animego-auto-play/raw/main/auto-play.user.js
 // @homepageURL  https://github.com/MAKS11060/animego-auto-play
 
 // ==/UserScript==
