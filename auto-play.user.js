@@ -8,8 +8,8 @@
 // @match        https://aniboom.one/*
 // @match        https://kodik.info/*
 // @grant        none
-// @updateURL    https://github.com/MAKS11060/animego-auto-play/raw/main/auto-play.user.js
-// @downloadURL  https://github.com/MAKS11060/animego-auto-play/raw/main/auto-play.user.js
+// @updateURL    https://raw.githubusercontent.com/MAKS11060/animego-auto-play/main/auto-play.user.js
+// @downloadURL  https://raw.githubusercontent.com/MAKS11060/animego-auto-play/main/auto-play.user.js
 // @homepageURL  https://github.com/MAKS11060/animego-auto-play
 
 // ==/UserScript==
