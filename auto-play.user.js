@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Animego play next
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  automatic open next video
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=animego.org
 // @match        https://animego.org/anime/*
