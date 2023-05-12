@@ -31,46 +31,41 @@
     console.log('set episode', epsEl[currentEpisode])
     epsEl[currentEpisode]?.click()
   }
+
   const useFS = el => {
     el.requestFullscreen().catch(r => console.error('fullscreen err', r))
   }
 
   const play = () => {
     if (['kodik.info'].includes(window.location.hostname)) {
-      // const el = window.document.querySelector('video')
-      // el.play()
       const playEl = window.document.querySelector('.play_button')
       playEl?.click()
     }
 
     if (['aniboom.one'].includes(window.location.hostname)) {
-      let i = setInterval(() => {
-        // console.log('try play()', window.location.hostname)
+      const i = setInterval(() => {
         const btnEl = window.document.querySelector('button[type=button]')
         btnEl?.click()
 
         if (btnEl) clearInterval(i)
       }, 200)
 
-      // const el = window.document.querySelector('video')
-      // el.play()
-      // const playEl = window.document.querySelector('.play_button')
-      // playEl?.click()
     }
   }
 
   if (window.top === window.self) {
-    console.log('main', window)
+    // console.log('main', window)
     window.addEventListener("message", e => {
       if (!e.data) return
       if (e.data?.title === "mousemove") return // kodik
-      console.log('main', e.data)
+      // console.log('main', e.data)
 
       if (e.data.event === 'ping') {
         window.top.postMessage({event: 'pong'}, '*')
         // window.top.postMessage({event: 'autoplay', value: autoPlay}, '*')
         return
       }
+
       if (e.data.event === 'iframe_player') {
         epsEl = [...document.querySelectorAll('div[data-episode]')]
         if (epsEl.length) {
@@ -85,6 +80,7 @@
         }
         return
       }
+
       if (e.data.event === 'ended') {
         nextEpisode()
         return
